@@ -1,8 +1,13 @@
+baseURL = "https://hogcrankerz.com/"
 theme = "PaperMod"
-# Make sure Hugo generates HTML (and RSS/Sitemap) for the home page & sections
+
+# Generate real HTML pages (plus RSS and sitemap) for all sections
 [outputs]
 home    = ["HTML", "RSS", "SITEMAP"]
 section = ["HTML", "RSS"]
 taxonomy = ["HTML", "RSS"]
 term     = ["HTML", "RSS"]
-baseURL = "https://hogcrankerz.com/"
+
+# If you had disableKinds before, make sure "home" and "page" are NOT disabled.
+# Example (safe):
+# disableKinds = ["taxonomy", "term"]  # <-- do NOT include "home" or "page"
