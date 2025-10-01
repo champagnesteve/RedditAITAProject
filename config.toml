@@ -1,1 +1,8 @@
 theme = "PaperMod"
+# Make sure Hugo generates HTML (and RSS/Sitemap) for the home page & sections
+[outputs]
+home    = ["HTML", "RSS", "SITEMAP"]
+section = ["HTML", "RSS"]
+taxonomy = ["HTML", "RSS"]
+term     = ["HTML", "RSS"]
+baseURL = "https://hogcrankerz.com/"
